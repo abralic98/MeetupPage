@@ -9,7 +9,7 @@ function MeetupItem(props){
                 </div>
                 <div className={classes.content}>
                     <h3>{props.title}</h3>
-                    <address>{props.address}</address>
+                    <address>{props.adress}</address>
                     <p>{props.description}</p>
                 </div>
                 

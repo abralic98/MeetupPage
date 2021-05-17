@@ -8,7 +8,7 @@ function NewMeetUp(){
             "https://reakt-meetups-default-rtdb.firebaseio.com/meetups.json",
             {
                 method: "POST",
-                body: JSON.stringify(meetupData),
+                body: JSON.stringify(meetupData)
                 
             }
         )
