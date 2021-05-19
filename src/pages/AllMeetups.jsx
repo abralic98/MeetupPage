@@ -25,7 +25,7 @@ function AllMeetUps(){
             }
             setIsLoading(false);
             setLoadedMeetups(meetups);
-            console.log(meetups)
+            
           })
       }, [])
 

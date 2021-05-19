@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     display:Flex;
+    flex-wrap:wrap;
     width:90vw;
     justify-content: space-around;
     margin-left:auto;
