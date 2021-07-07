@@ -5,12 +5,7 @@ import MeetupList from "../components/MeetupList"
 function Favorites(){
     const favoriteCtx = useContext(FavoritesContext)
     console.log(favoriteCtx.favorites)
-    //let kurac=localStorage.getItem("favoriti")
-    //favoriteCtx.favorites=JSON.parse(kurac);
     let content;
-
-    
-    
     if(favoriteCtx.totalFavorites===0){
         content=<h1>You have no favorites</h1>
     }

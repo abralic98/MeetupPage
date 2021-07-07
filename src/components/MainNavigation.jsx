@@ -8,7 +8,7 @@ function MainNavigation() {
     return(
         <header className={classes.header}>
             <div className={classes.logo}>
-                REAKT MITUPS
+                React Meetups
             </div>
             <nav>
                 <ul>

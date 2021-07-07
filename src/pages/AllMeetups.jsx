@@ -9,7 +9,7 @@ function AllMeetUps(){
     useEffect(() => {
       setIsLoading(true);
         fetch(
-          "https://reakt-meetups-default-rtdb.firebaseio.com/meetups.json"
+          "https://reactmeetups-ef0c5-default-rtdb.firebaseio.com/meetups.json"
           ).then(response =>{
             return response.json();
           }).then(data =>{
@@ -20,7 +20,7 @@ function AllMeetUps(){
                 id:keys,
                 ...data[keys]
               }
-              console.log(meetup);
+              console.log(meetups,"MEETUPS");
               meetups.push(meetup);
             }
             setIsLoading(false);

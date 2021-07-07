@@ -4,16 +4,11 @@ import Card from "./Card";
 import FavoritesContext from "../store/Favorites-context"
 
 function MeetupItem(props){
-    
-    
     const favoritesCtx = useContext(FavoritesContext);
-    
     const itemIsFavorite = favoritesCtx.itemIsFavorite(props.id)
     function toggleFavorites(){
-        if(itemIsFavorite){
-            
+        if(itemIsFavorite){  
             favoritesCtx.removeFavorite(props.id);
-            
             localStorage.removeItem("favoriti")
         }else{
             favoritesCtx.addFavorite({
@@ -22,15 +17,11 @@ function MeetupItem(props){
                 image:props.image,
                 description:props.description,
                 adress:props.adress
-                
             })
             
         }
-        
-        
     }
-    
-    localStorage.setItem("favoriti",JSON.stringify(favoritesCtx.favorites))
+    console.log(props)
     return(
         <li className={classes.item}>
             <Card>
